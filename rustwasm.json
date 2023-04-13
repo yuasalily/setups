@@ -1,5 +1,5 @@
 {
-	"name": "Rust WebAssembly",
+	"name": "Rust WebAssembly Template",
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {},
