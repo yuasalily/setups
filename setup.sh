@@ -2,7 +2,7 @@
 
 mkdir -p .devcontainer
 
-if [ $1 = "rust"]; then
+if [ $1 = "rust" ]; then
     bash -c "$(curl -L https://raw.githubusercontent.com/yuasalily/setups/main/rust.json)"
 fi
 
