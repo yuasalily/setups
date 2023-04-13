@@ -3,9 +3,9 @@
 mkdir -p .devcontainer
 
 if [ $1 = "rust" ]; then
-    bash -c "$(curl -L https://raw.githubusercontent.com/yuasalily/setups/main/rust.json)"
+    curl -L -o .devcontainer/devcontainer.json https://raw.githubusercontent.com/yuasalily/setups/main/rust.json
 fi
 
 if [ $1 = "rustwasm" ]; then
-    bash -c "$(curl -L https://raw.githubusercontent.com/yuasalily/setups/main/rustwasm.json)"
+    curl -L -o .devcontainer/devcontainer.json https://raw.githubusercontent.com/yuasalily/setups/main/rustwasm.json
 fi
