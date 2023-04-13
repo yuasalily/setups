@@ -4,7 +4,7 @@
 ## 使い方
 rust用のdevcontainerを用意する場合
 ```
-bash -c "$(curl -L https://raw.githubusercontent.com/yuasalily/setup/main/setup.sh)" -- rust
+bash -c "$(curl -L https://raw.githubusercontent.com/yuasalily/setups/main/setup.sh)" -- rust
 ```
 
 rust + wasm-pack用のdevcontainerを用意する場合
