@@ -9,3 +9,7 @@ fi
 if [ $1 = "rustwasm" ]; then
     curl -L -o .devcontainer/devcontainer.json https://raw.githubusercontent.com/yuasalily/setups/main/rustwasm.json
 fi
+
+if [ $1 = "go" ]; then
+    curl -L -o .devcontainer/devcontainer.json https://raw.githubusercontent.com/yuasalily/setups/main/go.json
+fi
