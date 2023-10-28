@@ -32,7 +32,9 @@
 				"[rust]": {
 					"rust-analyzer.cargo.allFeatures": true,
 					"rust-analyzer.checkOnSave.command": "clippy"
-				}
+				},
+				"dotfiles.repository": "https://github.com/yuasalily/dotfiles.git",
+				"dotfiles.targetPath": "~/dotfiles"
 			}
 		}
 	},
