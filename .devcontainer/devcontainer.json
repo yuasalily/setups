@@ -1,0 +1,31 @@
+{
+	"name": "dotfiles",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"files.autoSave": "onFocusChange",
+				"files.trimFinalNewlines": true,
+				"files.trimTrailingWhitespace": true,
+				"editor.minimap.enabled": false,
+				"editor.fontSize": 16,
+				"editor.bracketPairColorization.enabled": true,
+				"editor.copyWithSyntaxHighlighting": false,
+				"editor.formatOnSave": true,
+				"editor.inlayHints.enabled": "on",
+				"workbench.editor.enablePreview": false,
+				"workbench.editor.enablePreviewFromQuickOpen": false,
+				"workbench.tree.renderIndentGuides": "always",
+				"editor.codeActionsOnSave": {
+					"source.organizeImports": true
+				},
+				"dotfiles.repository": "https://github.com/yuasalily/dotfiles.git",
+				"dotfiles.targetPath": "~/dotfiles"
+			}
+		}
+	},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root"
+}
