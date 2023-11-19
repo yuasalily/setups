@@ -13,3 +13,7 @@ fi
 if [ $1 = "go" ]; then
     curl -L -o .devcontainer/devcontainer.json https://raw.githubusercontent.com/yuasalily/setups/main/go.json
 fi
+
+if [ $1 = "astro" ]; then
+    curl -L -o .devcontainer/devcontainer.json https://raw.githubusercontent.com/yuasalily/setups/main/astro.json
+fi

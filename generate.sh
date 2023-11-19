@@ -20,5 +20,6 @@ merge() {
 # todo: common以外のfolderをforで回すようにする
 merge go
 merge rust
+merge astro
 
 rm -f tmp_*

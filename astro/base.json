@@ -1,0 +1,4 @@
+{
+    "name": "Astro Template",
+    "image": "mcr.microsoft.com/devcontainers/base:jammy"
+}
