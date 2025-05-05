@@ -1,0 +1,46 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Rust Template",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/rust:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"christian-kohler.path-intellisense",
+				"vadimcn.vscode-lldb",
+				"rust-lang.rust-analyzer",
+				"swellaby.vscode-rust-test-adapter",
+				"fill-labs.dependi",
+				"tamasfe.even-better-toml"
+			],
+			"settings": {
+				"files.autoSave": "onFocusChange",
+				"files.trimFinalNewlines": true,
+				"files.trimTrailingWhitespace": true,
+				"editor.minimap.enabled": false,
+				"editor.fontSize": 16,
+				"editor.bracketPairColorization.enabled": true,
+				"editor.copyWithSyntaxHighlighting": false,
+				"editor.formatOnSave": true,
+				"editor.inlayHints.enabled": "on",
+				"workbench.editor.enablePreview": false,
+				"workbench.editor.enablePreviewFromQuickOpen": false,
+				"workbench.tree.renderIndentGuides": "always",
+				"editor.codeActionsOnSave": {
+					"source.organizeImports": "explicit"
+				},
+				"[rust]": {
+					"editor.defaultFormatter": "rust-lang.rust-analyzer"
+				},
+				"rust-analyzer.cargo.allFeatures": true,
+				"rust-analyzer.checkOnSave": true,
+				"rust-analyzer.check.command": "clippy"
+			}
+		}
+	},
+	"postCreateCommand": "cargo install cargo-edit"
+}
